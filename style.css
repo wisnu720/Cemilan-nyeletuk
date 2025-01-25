@@ -242,7 +242,7 @@ header.sticky{
   color:#EE1C47;
 }
 .cart img{
-  width:380px;
+  width:250px;
   height:auto;
   border-radius:5px;
 }
@@ -254,7 +254,7 @@ header.sticky{
 }
 .update-cart{
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(380px, auto));
+  grid-template-columns:repeat(auto-fit, minmax(240px, auto));
   gap:1rem;
 }
 .cart h5{
