@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Carousel</title>
+  <!--STYLE CSS-->
+  <link rel="stylesheet"href="Haha.css">
+  <!--FONT AWESOME-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!--GOOGLE FONT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+rel="stylesheet" />
+
+  <!--CDN LIBRARY-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--BOC ICONS-->
+  <!-- or -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: arial sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+header{
+  position:fixed;
+  top:0;
+  right:0;
+  z-index:1001;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  padding:10px;
+  z-index:1000;
+  background:#fff;
+}
+.back i{
+  color:black;
+  font-size:20px;
+  margin:10px;
+  cursor:pointer;
+}
+.back i:hover{
+  color:#EE1C47;
+}
+.logo img{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+}
+main{
+  width:100%;
+  height:auto;
+  margin-top:80px;
+} 
+.teks{
+  margin:10px;
+}
+.main-image-right{
+  width:100%;
+  height:auto;
+  display:flex;
+}
+.main-image-right img{
+  width:550px;
+  height:300px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.10);
+  position:relative;
+  right:50px;
+  object-fit:cover;
+}
+.main-image-left{
+  width:100%;
+  height:auto;
+  display:flex;
+}
+.main-image-left img{
+  width:450px;
+  height:300px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.10);
+  position:relative;
+  left:120px;
+  top:-100px;
+  z-index:100;
+  object-fit:cover;
+}
+.contact-to-wa{
+  position:fixed;
+  z-index:1;
+  top:90%;
+  left:90%;
+  cursor:pointer;
+  font-size:34px;
+}
+.about{
+  display:flex;
+  gap:10px;
+}
+.about p{
+  font-family:'Roboto Condensed';
+  margin-bottom:50px;
+}
+.custom-line{
+  width:10px;
+  color:black;
+  background:black;
+  display:inline-block;
+}
+.visi{
+  display:flex;
+  gap:10px;
+}
+.visi p{
+  font-family:'Roboto Condensed';
+  margin-bottom:20px;
+}
+h1{
+  font-family:'Parkinsans';
+  font-weight:200;
+  text-align:center;
+}
+h3{
+  font-family:'Parkinsans';
+  color:#0ba3bc;
+  margin-bottom:30px;
+}
+/*contact section*/
+section{
+  padding:5% 10%;
+}
+.contact{
+  background:#f3f4f6;
+}
+.contact-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(160px,auto));
+  gap:3rem;
+}
+.first-info img{
+  width:50px;
+  height:auto;
+  border-radius:50%;
+  box-shadow:0 0 10px lightblue;
+}
+.contact-info p{
+  color:#707070;
+  margin-bottom:5px;
+}
+.contact-info h4{
+  font-weight:600;
+  font-size:18px;
+  margin-bottom:10px;
+}
+.social-icon.social-icon a{
+  color:#000;
+  font-size:20px;
+}
+.footer {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: capitalize;
+  background: #fff;
+  padding: 20px 10px;
+}
+</style>
+<body>
+  <header>
+    
+      <div class="back">
+      <a href="index.html"><i class='bx bx-arrow-from-right'></i></a>
+      </div>
+      
+      <div class="logo">
+      <img src="logo.jpg">
+      </div>
+    
+  </header>
+  
+<main>
+  <section>
+  <div class="teks">
+  <h1>about</h1>
+  <h3>siapa kami?</h3>
+  <div class="about">
+  <hr class="custom-line">
+  <p>Kami adalah Cemilan Nyeletuk — sebuah merek cemilan yang terlahir dari 
+    <b>tahun 2015 </b>
+    cemilan khas yang terbuat dari bahan-bahan alami
+    dan segar. Dengan cita rasa yang pedas dan gurih,
+    cemilan kami sudah menjadi pilihan favorit banyak
+    orang yang mencari camilan lezat untuk menemani
+    waktu santai maupun bersantai bersama keluarga.
+
+    Kami berdedikasi untuk menghadirkan cemilan yang 
+    tidak hanya nikmat, tetapi juga memberikan
+    kenikmatan dari segi kualitas. Dengan
+    menggunakan bahan-bahan pilihan, kami memastikan
+    setiap gigitan cemilan kemplang memberikan sensasi
+    renyah dan rasa yang menggoda.</p>
+  </div>
+  <h3>visi kami</h3>
+  <div class="visi">
+   <hr class="custom-line"><p>adalah menjadi cemilan pilihan nomor satu di
+    Indonesia dengan menawarkan berbagai varian rasa
+    yang unik dan menggugah selera, mulai dari yang
+    ringan hingga yang pedas menggigit.
+
+    Kami percaya bahwa cemilan tidak hanya sekadar
+    makanan ringan, tetapi juga sebuah pengalaman yang
+    membahagiakan. Oleh karena itu, setiap kemasan
+    kemplang kami diproduksi dengan penuh kepercayaan
+    untuk menghadirkan kepuasan kepada setiap
+    pelanggan.
+
+    Dengan semangat inovasi dan komitmen terhadap
+    kualitas, Cemilan Kemplang hadir untuk memenuhi
+    kebutuhan camilan Anda di setiap kesempatan.</p>
+    </div>
+    
+</div>
+</section>
+</main>
+<div class="flex">
+  <div class="main-image-right">
+    <img src="bunga.jpg">
+  </div>
+  <div class="main-image-left">
+    <img src="makaronipedas.jpg">
+  </div>
+</div>
+<!--LOCATION-->
+  <section class="contact">
+    <div class="contact-info">
+       
+         <div class="first-info">
+    <img src="logo.jpg">
+    <p>jln cimaranggi <br>indonesia</p>
+    <p>085724658153</p>
+    <p>cemilannyeletuk@gmail.com</p>
+    <div class="social-icon">
+      <a href="https://www.facebook.com/share/143YCnmsRX/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/owner_cemilannyeletuk?igsh=YnZob2ZzeWpoNDFx" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
+      <a href="https://www.tiktok.com/@wisnu.owner.cemil?_t=ZS-8tLg1YVwU5w&_r=1" target="_blank" rel="noopener noreferrer"><i class='bx bxl-tiktok'></i></a>
+    </div>
+  </div>
+
+      <div class="second-info">
+        <h4>dukungan</h4>
+        <p>hubungi saya</p>
+        <p>tentang halaman</p>
+        <p>pengiriman dan pengembalian</p>
+      </div>
+
+      <div class="third-info">
+        <h4>belanja</h4>
+        <p>cemilan pedas</p>
+        <p>cemilan original</p>
+        <p>cemilan request</p>
+      </div>
+
+      <div class="fourth-info">
+        <h4>Expertise</h4>
+        <p>web dev</p>
+        <p>jasa website</p>
+        <p>kerajinan pvc (motor)</p>
+        <p>hubungi web developer</p>
+      </div>
+
+      <div class="five">
+        <h4>info</h4>
+        <p>diskon</p>
+        <p>potongan harga</p>
+        <p>info terkini</p>
+      </div>
+    </div>
+  </section>
+    <div class="footer">
+    &copy; cemilan nyeletuk. All Rights Reserved.
+  </div>
+
+</body>
+</html>
